@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   get "/:username" => "users#show", as: :user
+  get ":username/liked" => "users#liked", as: :liked
 end
