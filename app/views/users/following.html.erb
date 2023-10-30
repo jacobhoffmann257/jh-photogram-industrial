@@ -1,0 +1,4 @@
+  <%= render "shared/pills", user: @user %>
+<% @user.leaders.each do |user| %>
+  <%= render "users/user", user: user %>
+<% end %>
